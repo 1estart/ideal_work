@@ -1,0 +1,20 @@
+# Rust specific ignores in ideal_work directory
+ideal_work/target/
+ideal_work/**/*.rs.bk
+ideal_work/Cargo.lock
+ideal_work/*.profraw
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
