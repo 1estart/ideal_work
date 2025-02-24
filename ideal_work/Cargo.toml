@@ -1,0 +1,6 @@
+[package]
+name = "ideal_work"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
