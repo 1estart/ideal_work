@@ -1,3 +1,4 @@
+mod bowling_game;
 mod prime_factors;
 mod stack;
 
