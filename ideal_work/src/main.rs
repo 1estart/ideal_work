@@ -1,3 +1,4 @@
+mod prime_factors;
 mod stack;
 
 fn main() {
