@@ -27,29 +27,29 @@ fn assert_wrapper(s: &str, w: usize, expected: &str) {
 mod string_line_wrapper_tests {
     use super::*;
 
-    // #[test]
-    // fn test_string_line_wrapper_simple_case() {
-    //     assert_wrapper("Four", 7, "Four");
-    // }
+    #[test]
+    fn test_string_line_wrapper_simple_case() {
+        assert_wrapper("Four", 7, "Four");
+    }
 
-    // #[test]
-    // fn test_with_one_slash_n() {
-    //     assert_wrapper("Four score", 7, "Four\nscore");
-    // }
+    #[test]
+    fn test_with_one_slash_n() {
+        assert_wrapper("Four score", 7, "Four\nscore");
+    }
 
-    // #[test]
-    // fn test_with_one_space() {
-    //     assert_wrapper("ago our", 7, "ago our");
-    // }
+    #[test]
+    fn test_with_one_space() {
+        assert_wrapper("ago our", 7, "ago our");
+    }
 
-    // #[test]
-    // fn test_big_sentence() {
-    //     assert_wrapper(
-    //         "Four score and seven years ago our",
-    //         7,
-    //         "Four\nscore\nand\nseven\nyears\nago our",
-    //     );
-    // }
+    #[test]
+    fn test_big_sentence() {
+        assert_wrapper(
+            "Four score and seven years ago our",
+            7,
+            "Four\nscore\nand\nseven\nyears\nago our",
+        );
+    }
 
     #[test]
     fn test_empty_string() {
