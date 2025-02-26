@@ -50,4 +50,12 @@ mod sorting_1_tests {
     fn sort_three_unsorted_elements_with_two_last_unsorted() {
         assert_eq!(sorting_1(vec![2, 3, 1]), vec![1, 2, 3]);
     }
+
+    #[test]
+    fn sort_large_unsorted_with_ten_elements() {
+        assert_eq!(
+            sorting_1(vec![9, 8, 7, 6, 5, 4, 3, 2, 1, 0]),
+            vec![0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        );
+    }
 }
